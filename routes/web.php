@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'MainController@index');
+Route::get('/categories', 'MainController@categories');
 Route::get('/{category}', 'MainController@category');
+
 Route::get('/mobile/{product}', 'MainController@product');
 
 Route::get('/', function () {
