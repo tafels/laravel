@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'MainController@index');
-Route::get('/mobile', 'MainController@category');
-Route::get('/mobile/iphone', 'MainController@product');
+Route::get('/{category}', 'MainController@category');
+Route::get('/mobile/{product}', 'MainController@product');
 
+Route::get('/', function () {
+    return view('index');
+});
