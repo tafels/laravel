@@ -12,12 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/user/{name?}', function ($name = null) {
-    return $name;
-});
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-//Route::get('/fedotov', function () {
-//    return 'sssss';
-//});
+Route::get('/', 'MainController@index');
+Route::get('/mobile', 'MainController@category');
+Route::get('/mobile/iphone', 'MainController@product');
+
