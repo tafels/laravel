@@ -33,7 +33,7 @@ class Kernel extends ConsoleKernel
     protected function commands2()
         {
             $this->load(__DIR__.'/Commands');
-            $this->load(__DIR__.'/Commands2');
+            $this->load(__DIR__.'/Commands3');
 
             require base_path('routes/console.php');
         }
