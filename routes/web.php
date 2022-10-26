@@ -37,7 +37,7 @@ use Illuminate\Support\Facades\App;
 //    Route::get('/admin', 'AdminController@index')->name('index');
 //    Route::get('/admin/{controller}', 'AdminController@index')->name('index');
 //
-//    Route::get('/order', 'MainController@order')->name('order');
+Route::get('/order', 'MainController@order')->name('order');
 //    Route::get('/categories', 'MainController@categories')->name('categories');
 //    Route::get('/{category}', 'MainController@category')->name('category');
 //    Route::get('/category/{product}', 'MainController@product')->name('product');
